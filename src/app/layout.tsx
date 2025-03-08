@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" bbai-tooltip-injected="true">
       <body
         className={`${geistSans.variable} ${geistMono.variable} md:px-60 antialiased`}
-        data-new-gr-c-s-check-loaded="14.1096.0"
+        data-new-gr-c-s-check-loaded="14.1226.0"
         data-gr-ext-installed=""
       >
         {children}
