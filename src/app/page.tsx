@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +11,7 @@ import SkillsSection from "../components/skills-section";
 import Achivement from "@/components/achivement";
 
 export default function Home() {
-  const [blurState, setBlurState] = useState(true);
+  const [blurState, setBlurState] = useState(false);
 
   useEffect(() => {
     setBlurState(false);
@@ -81,7 +80,7 @@ export default function Home() {
         className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
       >
         <h1 className="text-3xl font-bold text-center sm:text-left">
-          Hi, I'm Rahul Pradhan
+          Hi, I&apos;m Rahul Pradhan
         </h1>
         <ul className="list-inside list-disc text-md text-center sm:text-left text-gray-400 font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
@@ -143,8 +142,8 @@ export default function Home() {
               >
                 AI Chat-Bot
               </a>{" "}
-              It's Muti-document read chatbot that can able to read the pdf,
-              wordfiles, and ppt's
+              It&apos;s a Multi-document reading chatbot that can read PDFs,
+              Word files, and PPTs.
             </li>
             <li className="mb-2 text-gray-400">
               <a

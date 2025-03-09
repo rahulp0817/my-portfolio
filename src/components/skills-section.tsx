@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import { motion } from "framer-motion";
 import {
   FaReact,
