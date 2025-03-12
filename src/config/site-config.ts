@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 const TITLE =
   'Rahul Pradhan';
 const DESCRIPTION =
-  'This my portfilo of rahul pradhan, full stack developer';
+  'This portfilo of rahul pradhan, full stack developer';
 
 const PREVIEW_IMAGE_URL = '/rahul.png';
 const ALT_TITLE =

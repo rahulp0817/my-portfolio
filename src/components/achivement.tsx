@@ -7,7 +7,7 @@ const achivement = () => {
       <h1 className="text-2xl font-bold text-center sm:text-left mb-6">
         Achivements
       </h1>
-      <ul className="list-inside list-disc text-md text-center sm:text-left text-gray-400 font-[family-name:var(--font-geist-mono)]">
+      <ul className="list-inside list-disc text-md sm:text-left text-gray-400 font-[family-name:var(--font-geist-mono)]">
         <li className="mb-2">
           Achieved{"  "}
           <a
@@ -31,7 +31,7 @@ const achivement = () => {
         </li>
         <li className="mb-2">
           Achieved Certification from Oracle cloud Associate, Oracle AI
-          Associate, AWS Cloud Quest, Postman API Student Expert, Career
+          Associate, Git & GitHub Foundation, AWS Cloud Quest, Postman API Student Expert, Career
           Essentials in Generative AI from Microsoft and RabbitMQ
         </li>
       </ul>
