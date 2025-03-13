@@ -99,7 +99,7 @@ export default function Home() {
           </h1>
           <ul className="list-inside list-disc text-md sm:text-left text-gray-400 font-[family-name:var(--font-geist-mono)]">
             <li className="mb-2">
-              A full-stack engineer from India, Bengaluru learning about AI
+              A full-stack engineer from Bengaluru, India learning about AI
               Agents
             </li>
             <li className="mb-2">
@@ -110,9 +110,12 @@ export default function Home() {
               >
                 CongniTask
               </a>{" "}
-              an AI Automation SAAS Platform
+              an AI Automation SAAS Platform, solving complex workflows
             </li>
-            <li className="mb-2">Worked on a streaming statup for 8 months</li>
+            <li className="mb-2">
+              Worked on a streaming statup for 8 months building
+              high-performance backend services
+            </li>
             <li className="mb-2">
               Reach out if you want to find a way to work together!
             </li>
@@ -133,7 +136,7 @@ export default function Home() {
                 >
                   Journal App
                 </a>{" "}
-                Used to create users and their journals
+                Managed user-generated content with MongoDB with Spring Security
               </li>
               <li className="mb-2 text-gray-400">
                 <a
@@ -156,8 +159,8 @@ export default function Home() {
                 >
                   AI Chat-Bot
                 </a>{" "}
-                It&apos;s a Multi-document reading chatbot that can read PDFs,
-                Word files, and PPTs.
+                Multi-document reader handling PDFs, Word, and PPTs with natural
+                language processing
               </li>
               <li className="mb-2 text-gray-400">
                 <a
@@ -168,7 +171,8 @@ export default function Home() {
                 >
                   Polypay
                 </a>{" "}
-                A Money Transaction platform similar to paypal
+                Peer-to-peer payment platform (like Paytm), handling secure
+                transactions
               </li>
               <li className="mb-2 text-gray-400">
                 <a
@@ -190,7 +194,18 @@ export default function Home() {
                 >
                   Learning Management
                 </a>{" "}
-                LMS platform for students to learn the courses (UI)
+                User-centric LMS platform with dynamic course management (UI)
+              </li>
+              <li className="mb-2 text-gray-400">
+                <a
+                  href="https://github.com/rahulp0817/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-400 text-white"
+                >
+                  E-Commerce Stremming App
+                </a>{" "}
+                Build an React Native Application (UI)
               </li>
             </ol>
             <SkillsSection />

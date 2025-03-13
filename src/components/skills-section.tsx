@@ -22,12 +22,21 @@ import {
   BiLogoSpringBoot,
 } from "react-icons/bi";
 import { IoLogoGithub } from "react-icons/io";
-import { SiExpress, SiMongodb, SiPostgresql } from "react-icons/si";
-import { FaCss3 } from "react-icons/fa6";
+import {
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiApachekafka,
+  SiGrafana,
+  SiSocketdotio,
+} from "react-icons/si";
+import { FaCss3, FaGolang } from "react-icons/fa6";
+import { DiRedis } from "react-icons/di";
 
 export default function SkillsSection() {
   const skills = [
     { name: "ReactJS", icon: <FaReact /> },
+    { name: "React Native", icon: <FaReact /> },
     { name: "NextJS", icon: <RiNextjsFill /> },
     { name: "TypeScript", icon: <BiLogoTypescript /> },
     { name: "JavaScript", icon: <RiJavascriptFill /> },
@@ -47,6 +56,11 @@ export default function SkillsSection() {
     { name: "AWS", icon: <FaAws /> },
     { name: "Docker", icon: <FaDocker /> },
     { name: "Kubernetes", icon: <BiLogoKubernetes /> },
+    { name: "Golang", icon: <FaGolang /> },
+    { name: "Kafka", icon: <SiApachekafka /> },
+    { name: "Grafana", icon: <SiGrafana /> },
+    { name: "Redis", icon: <DiRedis /> },
+    { name: "WebSockets", icon: <SiSocketdotio /> },
   ];
 
   return (
@@ -59,7 +73,7 @@ export default function SkillsSection() {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="flex items-center px-2 py-1.5 border rounded-full justify-center gap-2 cursor-pointer"
+            className="flex items-center px-2 py-1.5 border rounded-full justify-center gap-2 cursor-default"
             whileHover={{
               scale: 1.1,
             }}
