@@ -3,9 +3,10 @@ import { Metadata } from 'next';
 const TITLE =
   'Rahul Pradhan';
 const DESCRIPTION =
-  'This portfilo of rahul pradhan, full stack developer';
+  'Hi I am Rahul Pradhan, full stack developer';
 
 const PREVIEW_IMAGE_URL = '/rahul.png';
+const PREVIEW_IMAGE_URL_SITE = '/rahulprofile.png';
 const ALT_TITLE =
   'Rahul Pradhan';
 const BASE_URL = 'https://rahulpradhandev.com';
@@ -17,7 +18,7 @@ export const siteConfig: Metadata = {
     icon: '/favicon.ico',
   },
   applicationName: 'Rahul Pradhan Portfilo',
-  creator: 'Rahul',
+  creator: 'Rahul pradhan',
   twitter: {
     creator: '@Rahulpradhan017',
     title: TITLE,
@@ -25,7 +26,7 @@ export const siteConfig: Metadata = {
     card: 'summary_large_image',
     images: [
       {
-        url: PREVIEW_IMAGE_URL,
+        url: PREVIEW_IMAGE_URL_SITE,
         width: 1200,
         height: 630,
         alt: ALT_TITLE,
@@ -35,7 +36,7 @@ export const siteConfig: Metadata = {
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    siteName: 'Rahul Pradhan Portfilo',
+    siteName: 'Rahul Pradhan',
     url: BASE_URL,
     locale: 'en_US',
     type: 'website',
@@ -75,11 +76,11 @@ export const siteConfig: Metadata = {
     'Linux & Shell Scripting',
     'Spring Boot & Java Developer',
     'AI & Machine Learning Enthusiast',
-    'Rahul Pradhan Web Developer',
-    'Rahul Pradhan Software Engineer',
-    'Rahul Pradhan GitHub Projects',
-    'Rahul Pradhan LinkedIn Profile',
-    'Rahul Pradhan Open Source Contributions',
+    'Rahul pradhan Web Developer',
+    'Rahul pradhan Software Engineer',
+    'Rahul pradhan GitHub Projects',
+    'Rahul pradhan LinkedIn Profile',
+    'Rahul pradhan Open Source Contributions',
     'Hire a Full-Stack Developer',
     'Web Developer for Hire',
     'Freelance React Developer',
@@ -88,7 +89,17 @@ export const siteConfig: Metadata = {
     'Live Streaming App Developer',
     'AI Automation Developer',
     'Web3 & Blockchain Developer',
-    'Cloud-Native Application Developer'
+    'Cloud-Native Application Developer',
+    'Rahul pradhan',
+    'Rahul pradhan dev',
+    'Rahul pradhan developer',
+    'full stack developer hiring',
+    'best full stack developer',
+    'full stack developer in bengaluru',
+    'full stack developer in bangalore',
+    'full stack developer bangalore',
+    'full stack developer bengaluru',
+    'full stack developer in bangalore',
 
   ],
   metadataBase: new URL(BASE_URL),
