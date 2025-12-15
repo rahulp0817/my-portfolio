@@ -9,6 +9,8 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faGoogleDrive } from "@fortawesome/free-brands-svg-icons";
 import SkillsSection from "../components/skills-section";
 import Achivement from "@/components/achivement";
+import FloatingActionButton from "@/components/fab";
+import NavigationBar from "@/components/NavigationBar";
 
 export default function Home() {
   const [blurState, setBlurState] = useState(false);
@@ -99,8 +101,13 @@ export default function Home() {
           </h1>
           <ul className="list-inside list-disc text-md sm:text-left text-gray-400 font-[family-name:var(--font-geist-mono)]">
             <li className="mb-2">
-              A full-stack engineer from Bengaluru, India learning about AI
-              Agents
+              A full-stack engineer from Bengaluru, India
+            </li>
+            <li className="mb-2">
+              Currently Working at Recordbook(YC22) as a Software Engineer
+            </li>
+            <li className="mb-2">
+              Have 1+ yrs of experiance building Software acrross App and Web
             </li>
             <li className="mb-2">
               Building{" "}
@@ -113,10 +120,6 @@ export default function Home() {
               an AI Automation SAAS Platform, solving complex workflows
             </li>
             <li className="mb-2">
-              Worked on a streaming statup for 8 months building
-              high-performance backend services
-            </li>
-            <li className="mb-2">
               Reach out if you want to find a way to work together!
             </li>
           </ul>
@@ -126,8 +129,8 @@ export default function Home() {
               Side Projects
             </h1>
 
-            <ol className="list-inside list-decimal text-sm  sm:text-left font-[family-name:var(--font-geist-mono)]">
-              <li className="mb-2 text-gray-400">
+            <ol className="list-disc pl-4 text-md sm:text-left text-gray-400 font-[family-name:var(--font-geist-mono)]">
+              <li className="mb-2 px-0 text-gray-400">
                 <a
                   href="https://github.com/rahulp0817/Spring-Boot-JournalApp"
                   target="_blank"
@@ -150,7 +153,7 @@ export default function Home() {
                 Used to deploy any app on the AWS cloud with the ECS scaling
                 feature
               </li>
-              <li className="mb-2 text-gray-400">
+              <li className="mb-2 pl-0 text-gray-400">
                 <a
                   href="https://github.com/rahulp0817/LLM-Models"
                   target="_blank"
@@ -266,6 +269,8 @@ export default function Home() {
         </a>
       </motion.footer> */}
       </motion.div>
+      <NavigationBar />
+      <FloatingActionButton mainAction={() => alert("FAB clicked!")} />
     </>
   );
 }
