@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { MessageCircle, Plus, X } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 type Action = {
@@ -23,7 +23,7 @@ const FloatingActionButton: React.FC<FloatingActionButtonProps> = ({
   const toggleMenu = () => setOpen((prev) => !prev);
 
   return (
-    <div className="fixed bottom-7 right-12 flex flex-col items-end space-y-3">
+    <div className="fixed z-50 bottom-7 right-12 flex flex-col items-end space-y-3">
       {/* Animated action buttons */}
       <AnimatePresence>
         {open &&

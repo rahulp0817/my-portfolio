@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 const TITLE =
-  'Rahul Pradhan';
+  'Rahul Pradhan - Software Developer';
 const DESCRIPTION =
   'Hi I am Rahul Pradhan, full stack developer';
 

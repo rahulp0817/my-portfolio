@@ -10,14 +10,46 @@ import { faGoogleDrive } from "@fortawesome/free-brands-svg-icons";
 import SkillsSection from "../components/skills-section";
 import Achivement from "@/components/achivement";
 import FloatingActionButton from "@/components/fab";
-import NavigationBar from "@/components/NavigationBar";
+import NavigationBar from "@/components/Navigation/NavigationBar";
+import {
+  BriefcaseBusiness,
+  CodeXml,
+  User,
+  Hammer,
+  Download,
+  MessagesSquare,
+} from "lucide-react";
+import ConnectModal from "@/components/Navigation/ConnectModal";
+import MarqueeCompainesLists from "@/components/CompainesLists";
+import TestimonialsList from "@/components/Testomonials";
+import ChatbotModal from "@/components/Chatbot/ChatModal";
+import Experience from "@/components/Experience";
+import { Projects } from "@/components/Projects";
 
 export default function Home() {
   const [blurState, setBlurState] = useState(false);
-
+  const [isConnectOpen, setIsConnectOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   useEffect(() => {
     setBlurState(false);
   }, []);
+
+  const navItems = [
+    { icon: User, label: "About Me", href: "#about" },
+    { icon: Hammer, label: "My Builds", href: "#projects" },
+    { icon: CodeXml, label: "Skills", href: "#skills" },
+    { icon: BriefcaseBusiness, label: "Experience", href: "#experience" },
+    {
+      icon: Download,
+      label: "Resume",
+      onClick: () => window.open("/resume.pdf", "_blank"),
+    },
+    {
+      icon: MessagesSquare,
+      label: "Connect",
+      onClick: () => setIsConnectOpen((prev) => !prev),
+    },
+  ];
 
   return (
     <>
@@ -215,62 +247,29 @@ export default function Home() {
             <Achivement />
           </motion.div>
         </motion.main>
-
-        {/* <motion.footer
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        className="row-start-3 flex gap-6 flex-wrap items-center justify-center"
-      >
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </motion.footer> */}
       </motion.div>
-      <NavigationBar />
-      <FloatingActionButton mainAction={() => alert("FAB clicked!")} />
+      {/* <section id="about">About Section</section>
+      <section id="builds">Builds Section</section>
+      <section id="skills">Skills Section</section>
+      <section id="experience">Experience Section</section>
+      <section id="connect">Connect Section</section> */}
+      <MarqueeCompainesLists />
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="experience">
+        <Experience />
+      </section>
+      <section id="testimonials">
+        <TestimonialsList />
+      </section>
+      <NavigationBar items={navItems} />
+      <ConnectModal
+        isOpen={isConnectOpen}
+        onClose={() => setIsConnectOpen(false)}
+      />
+      <FloatingActionButton mainAction={() => setOpen((prev) => !prev)} />
+      <ChatbotModal isOpen={open} onClose={() => setOpen(false)} />
     </>
   );
 }
